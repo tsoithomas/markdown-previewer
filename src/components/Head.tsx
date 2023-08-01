@@ -22,11 +22,18 @@ const Button = styled.button`
     color: #444;
 `;
 
-const Head = () => {
+
+
+
+export interface HeaderProps {
+    onToggleGuide: () => null
+}
+
+const Head = (props: HeaderProps) => {
     return (
         <HeaderContainer>
             <Title>Markdown Previewer</Title>
-            <Button>Button</Button>
+            <Button onClick={props.onToggleGuide}>Button</Button>
         </HeaderContainer>
     )
 }
