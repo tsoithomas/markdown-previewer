@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const OutputContainer = styled.div`
-    text-align: center;
-    border: 1px solid #444;
+    box-sizing: border-box;
     color: #444;
+    background-color: #ffcfe7;
+    color: #ba0160;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 20px;
 `;
 
 export interface MarkdownOutputProps {
@@ -14,6 +17,7 @@ export interface MarkdownOutputProps {
 const MarkdownOutput = (props: MarkdownOutputProps) => {
     return (
         <OutputContainer>
+            abs
         </OutputContainer>
     )
 }
