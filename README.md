@@ -25,7 +25,7 @@ machine for development and testing purposes.
 npm run dev
 
 ## Usage
-Click an item to highlight it.
+Input the text on the left to preview the result on the right.
 ![](https://github.com/tsoithomas/markdown-previewer/blob/main/markdown-previewer.png?raw=true)
 
 ## Contributing
