@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ReactMarkdown from "react-markdown";
 
 const OutputContainer = styled.div`
     box-sizing: border-box;
@@ -7,17 +8,21 @@ const OutputContainer = styled.div`
     color: #ba0160;
     width: 100%;
     overflow-y: scroll;
-    padding: 20px;
+    padding: 0 20px;
 `;
+
 
 export interface MarkdownOutputProps {
     markdown: string
 }
 
 const MarkdownOutput = (props: MarkdownOutputProps) => {
+
     return (
         <OutputContainer>
-            abs
+            <ReactMarkdown>
+                {props.markdown}
+            </ReactMarkdown>
         </OutputContainer>
     )
 }

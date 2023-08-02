@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const InputContainer = styled.div`
@@ -19,10 +20,16 @@ const StyledTextArea = styled.textarea`
     cursor: auto;
 `;
 
-const MarkdownInput = () => {
+export interface MarkdownInputProps {
+    value: string,
+    onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void,
+}
+
+
+const MarkdownInput = (props: MarkdownInputProps) => {
     return (
-        <InputContainer>
-            <StyledTextArea defaultValue="# Hello World"></StyledTextArea>
+        <InputContainer key="editor1">
+            <StyledTextArea onChange={props.onChange}  defaultValue={props.value}  key="editor2"/>
         </InputContainer>
     )
 }

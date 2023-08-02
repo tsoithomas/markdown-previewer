@@ -22,6 +22,8 @@ const Title = styled.h1`
     margin: 0;
     font-size: 36px;
     color: #fff;
+    overflow: hidden;
+    text-wrap: nowrap;
 `;
 
 const Button = styled.button`
